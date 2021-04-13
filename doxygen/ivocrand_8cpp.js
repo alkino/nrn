@@ -11,6 +11,7 @@ var ivocrand_8cpp =
     [ "nrn_random_isran123", "ivocrand_8cpp.html#a9f56245a52ed622ca6161cf498328482", null ],
     [ "nrn_random_pick", "ivocrand_8cpp.html#a3a5751aaeafa9caff1304d7238fa2d12", null ],
     [ "nrn_random_play", "ivocrand_8cpp.html#a9db3677a980a6b74c56ce228b594a069", null ],
+    [ "nrn_random_reset", "ivocrand_8cpp.html#a03e630f089c86f702d564e05264c5f2c", null ],
     [ "nrn_set_random_sequence", "ivocrand_8cpp.html#aab577066d83d72b9e7c3541cb4b7d502", null ],
     [ "r_ACG", "ivocrand_8cpp.html#ac64f7912e59c18fcb2df153570b6d9ce", null ],
     [ "r_binomial", "ivocrand_8cpp.html#aeeb9e05493333b915a9b6cf655a0646c", null ],

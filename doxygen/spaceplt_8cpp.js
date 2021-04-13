@@ -9,6 +9,7 @@ var spaceplt_8cpp =
     [ "implementList", "spaceplt_8cpp.html#a41d02ad0f7689b1b2f12a43313a02cfd", null ],
     [ "node_index", "spaceplt_8cpp.html#a2b23485a6e430d22c08f8523abd1654c", null ],
     [ "RangeVarPlot_reg", "spaceplt_8cpp.html#a65fe9e8b4b45d7b0f05923bb931558fc", null ],
+    [ "rvp_vector", "spaceplt_8cpp.html#ab0c8adf97b959beea7d6286e4c2e3a41", null ],
     [ "s_begin", "spaceplt_8cpp.html#a7017844916dea7f928dd8655d23c8e2f", null ],
     [ "s_color", "spaceplt_8cpp.html#a76160281d9300782a034c00885600f55", null ],
     [ "s_cons", "spaceplt_8cpp.html#ad5c814b2c0a67754ccf638f58d310969", null ],
@@ -20,10 +21,13 @@ var spaceplt_8cpp =
     [ "s_origin", "spaceplt_8cpp.html#ac2d520810800c5967f1fde172eaca12a", null ],
     [ "s_right", "spaceplt_8cpp.html#a1574eea4fb948071944c0a4da87c17c3", null ],
     [ "to_vector", "spaceplt_8cpp.html#a603965761b88cc01307f6cfb1dbad870", null ],
+    [ "to_vector_helper", "spaceplt_8cpp.html#af4218468dd01b68295fa8ab52e60e90e", null ],
     [ "hoc_execerror_messages", "spaceplt_8cpp.html#a2d8482cf68bcc831671ad3ec36b4b411", null ],
     [ "hoc_return_type_code", "spaceplt_8cpp.html#aa91de0c070a48ac60e12364327603928", null ],
     [ "nrn_multisplit_active_", "spaceplt_8cpp.html#a3eff325e8b9dd3cff9188213af879b6d", null ],
     [ "nrn_shape_changed_", "spaceplt_8cpp.html#a589bc1a5a09862bb7f797ee6c693791e", null ],
+    [ "nrnpy_rvp_rxd_to_callable", "spaceplt_8cpp.html#ad20916fd6d828bd315fddef32faa6b41", null ],
+    [ "rvp_retobj_members", "spaceplt_8cpp.html#add096c0342e794eb3c94388ac3c3d6b4", null ],
     [ "s_members", "spaceplt_8cpp.html#a6a8b37f7fd390deb3a0b5d65a80e96a7", null ],
     [ "structure_change_cnt", "spaceplt_8cpp.html#a5fd31564d79463bbaa80c78c1f2f4add", null ]
 ];

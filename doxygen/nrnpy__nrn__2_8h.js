@@ -9,5 +9,6 @@ var nrnpy__nrn__2_8h =
     [ "nrnpy_SegmentType", "nrnpy__nrn__2_8h.html#ad26735787a69951b9ceef44679b8fb3a", null ],
     [ "nrnpy_SegOfSecIterType", "nrnpy__nrn__2_8h.html#a7ef7f7484bc137a0179c4ce8a4587bcd", null ],
     [ "nrnpy_VarOfMechIterType", "nrnpy__nrn__2_8h.html#a298e2563f8b6c43003380929333e8aef", null ],
+    [ "pysec_sequence", "nrnpy__nrn__2_8h.html#af8d44eb7d56e41fcde58198449fe81d4", null ],
     [ "rv_seqmeth", "nrnpy__nrn__2_8h.html#a0ec263039cf5311d374a3e7647e364af", null ]
 ];

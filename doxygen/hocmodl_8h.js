@@ -5,7 +5,7 @@ var hocmodl_8h =
     [ "hoc_prconst", "hocmodl_8h.html#a281f40babb3a88c96997e330ac98c59f", null ],
     [ "hoc_terminal", "hocmodl_8h.html#a1e43246dfe9dfc0966eea8fb82516286", null ],
     [ "ardoub", "hocmodl_8h.html#a10238ef9a9e9dca02a481c02e6ee71ba", null ],
-    [ "function", "hocmodl_8h.html#a9b6c2f1933bdc570ac17910a39000999", null ],
+    [ "functions", "hocmodl_8h.html#a7983be5f6f686b9fe64dce7cdaf4fd74", null ],
     [ "hoc_pindepindex", "hocmodl_8h.html#a3127c296f5471a274f1afbe3c72a20fc", null ],
     [ "index1", "hocmodl_8h.html#a9a7a33f30989b128c1ab414738f45921", null ],
     [ "index2", "hocmodl_8h.html#a27b0880b1f747965f61a98aa4e676596", null ],

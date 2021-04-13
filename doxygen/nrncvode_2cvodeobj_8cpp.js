@@ -103,7 +103,7 @@ var nrncvode_2cvodeobj_8cpp =
     [ "msolve_cv_", "nrncvode_2cvodeobj_8cpp.html#a431bcb0cff76beb3df9740ad72e12dd4", null ],
     [ "msolve_ycur_", "nrncvode_2cvodeobj_8cpp.html#aa2f843878ff62b2fc9b04db8c61a5a40", null ],
     [ "net_cvode_instance", "nrncvode_2cvodeobj_8cpp.html#acd2d677f470987a31c2ffefe9b434e56", null ],
-    [ "nrn_is_artificial_", "nrncvode_2cvodeobj_8cpp.html#a0d386e78220e977ff1e98b022e366a3b", null ],
+    [ "nrn_is_artificial_", "nrncvode_2cvodeobj_8cpp.html#a6beee416c7a556c149e83312b7194400", null ],
     [ "nrn_multisplit_setup_", "nrncvode_2cvodeobj_8cpp.html#a0ef06c54583e717f612c481f800d60fa", null ],
     [ "nrn_use_bin_queue_", "nrncvode_2cvodeobj_8cpp.html#a58e27568938002cb30e47fbc94492837", null ],
     [ "nrn_use_fifo_queue_", "nrncvode_2cvodeobj_8cpp.html#a6cdae4f697f84066b6a43a01e229aa14", null ],

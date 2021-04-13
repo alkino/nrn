@@ -26,7 +26,6 @@ var hierarchy =
     [ "Area2Buf", "struct_area2_buf.html", null ],
     [ "Area2RT", "struct_area2_r_t.html", null ],
     [ "Arrayinfo", "struct_arrayinfo.html", null ],
-    [ "assoc_list", "structassoc__list.html", null ],
     [ "Background", null, [
       [ "AxisBackground", "class_axis_background.html", null ],
       [ "BoxBackground", "class_box_background.html", null ]
@@ -34,7 +33,6 @@ var hierarchy =
     [ "BAMech", "struct_b_a_mech.html", null ],
     [ "BAMechList", "class_b_a_mech_list.html", null ],
     [ "BAND", "struct_b_a_n_d.html", null ],
-    [ "BBCoreGapInfo", "struct_b_b_core_gap_info.html", null ],
     [ "BBS", "class_b_b_s.html", [
       [ "OcBBS", "class_oc_b_b_s.html", null ]
     ] ],
@@ -81,6 +79,7 @@ var hierarchy =
     ] ],
     [ "CoordinateSpace", "class_coordinate_space.html", null ],
     [ "core2nrn_callback_t", "structcore2nrn__callback__t.html", null ],
+    [ "cTemplate", "structc_template.html", null ],
     [ "Current_Triple", "struct_current___triple.html", null ],
     [ "CurrentData", "struct_current_data.html", null ],
     [ "CvMembList", "class_cv_memb_list.html", null ],
@@ -110,9 +109,6 @@ var hierarchy =
     ] ],
     [ "dl_info", "structdl__info.html", null ],
     [ "dll_s", "structdll__s.html", null ],
-    [ "doubleVec", "classdouble_vec.html", [
-      [ "doubleAVec", "classdouble_a_vec.html", null ]
-    ] ],
     [ "DoubScal", "struct_doub_scal.html", null ],
     [ "DoubVec", "struct_doub_vec.html", null ],
     [ "ECSAdiDirection", "struct_e_c_s_adi_direction.html", null ],
@@ -242,6 +238,7 @@ var hierarchy =
     [ "Item", "struct_item.html", null ],
     [ "Iter_data", "struct_iter__data.html", null ],
     [ "IVEC", "struct_i_v_e_c.html", null ],
+    [ "IvocVect", "class_ivoc_vect.html", null ],
     [ "K", "class_k.html", null ],
     [ "KEYTAB", "struct_k_e_y_t_a_b.html", null ],
     [ "KSChan", "class_k_s_chan.html", null ],
@@ -318,6 +315,7 @@ var hierarchy =
     [ "SaveState::NetConState", "struct_save_state_1_1_net_con_state.html", null ],
     [ "NetCvode", "class_net_cvode.html", null ],
     [ "NetCvodeThreadData", "class_net_cvode_thread_data.html", null ],
+    [ "newobj1_err_t", "structnewobj1__err__t.html", null ],
     [ "Node", "struct_node.html", null ],
     [ "SaveState::NodeState", "struct_save_state_1_1_node_state.html", null ],
     [ "NoIVGraphVector", "class_no_i_v_graph_vector.html", [
@@ -406,9 +404,6 @@ var hierarchy =
     ] ],
     [ "OcPtrVector", "class_oc_ptr_vector.html", null ],
     [ "OcPtrVector_", "struct_oc_ptr_vector__.html", null ],
-    [ "ParentVect", null, [
-      [ "IvocVect", "class_ivoc_vect.html", null ]
-    ] ],
     [ "ParseTopLevel", "class_parse_top_level.html", null ],
     [ "PathValue", "class_path_value.html", null ],
     [ "PERM", "struct_p_e_r_m.html", null ],
@@ -461,8 +456,8 @@ var hierarchy =
     [ "ReactSet", "struct_react_set.html", null ],
     [ "ReadyList", "class_ready_list.html", null ],
     [ "ReducedTree", "class_reduced_tree.html", null ],
-    [ "Regexp", "class_regexp.html", null ],
     [ "regexp", "structregexp.html", null ],
+    [ "Regexp", "class_regexp.html", null ],
     [ "REGION", "struct_r_e_g_i_o_n.html", null ],
     [ "Requirement", "class_requirement.html", null ],
     [ "Requisition", "class_requisition.html", null ],
@@ -523,6 +518,7 @@ var hierarchy =
     [ "SaveState::SecState", "struct_save_state_1_1_sec_state.html", null ],
     [ "Section", "struct_section.html", null ],
     [ "SectionListImpl", "class_section_list_impl.html", null ],
+    [ "SetupTransferInfo", "struct_setup_transfer_info.html", null ],
     [ "ShapePlotInterface", "class_shape_plot_interface.html", [
       [ "ShapePlotData", "class_shape_plot_data.html", null ]
     ] ],
@@ -540,13 +536,14 @@ var hierarchy =
     [ "StandardPicker", "class_standard_picker.html", [
       [ "ScenePicker", "class_scene_picker.html", null ]
     ] ],
-    [ "StateStructInfo", "struct_state_struct_info.html", null ],
     [ "SaveState::StateStructInfo", "struct_save_state_1_1_state_struct_info.html", null ],
+    [ "StateStructInfo", "struct_state_struct_info.html", null ],
     [ "StateTransitionEvent", "class_state_transition_event.html", null ],
     [ "Stepper", null, [
       [ "HocValStepper", "class_hoc_val_stepper.html", null ]
     ] ],
     [ "STEState", "class_s_t_e_state.html", null ],
+    [ "STETransition", "class_s_t_e_transition.html", null ],
     [ "Stimulus", "struct_stimulus.html", null ],
     [ "StmtInfo", "class_stmt_info.html", null ],
     [ "String", "class_string.html", [
@@ -563,7 +560,6 @@ var hierarchy =
     [ "TarList", "class_tar_list.html", null ],
     [ "TaskList", "struct_task_list.html", null ],
     [ "TaskQueue", "struct_task_queue.html", null ],
-    [ "Template", "struct_template.html", null ],
     [ "Templatedatum", "union_templatedatum.html", null ],
     [ "TERM", "struct_t_e_r_m.html", null ],
     [ "TQItem", "class_t_q_item.html", null ],

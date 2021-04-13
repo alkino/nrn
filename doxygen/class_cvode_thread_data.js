@@ -25,7 +25,6 @@ var class_cvode_thread_data =
     [ "pvdot_", "class_cvode_thread_data.html#a47b44858b10b602e86d282186f3535bf", null ],
     [ "record_", "class_cvode_thread_data.html#ad22e2b8e8e7ce6c12008c75e8d15dc30", null ],
     [ "rootnodecount_", "class_cvode_thread_data.html#a5feef548280ef263b70d9a00d34c4414", null ],
-    [ "ste_list_", "class_cvode_thread_data.html#a37407033b10441a74d474ac0df79a4f5", null ],
     [ "v_node_", "class_cvode_thread_data.html#adcba14cf5d30e517169e1c862aa8c321", null ],
     [ "v_node_count_", "class_cvode_thread_data.html#a8f3481dd6daec51e724423a300adafce", null ],
     [ "v_parent_", "class_cvode_thread_data.html#acf2a3af7adc4a4eef4ee627a0ea46a04", null ],

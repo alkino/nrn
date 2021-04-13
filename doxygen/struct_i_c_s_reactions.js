@@ -1,6 +1,8 @@
 var struct_i_c_s_reactions =
 [
+    [ "ecs_grid", "struct_i_c_s_reactions.html#a639672f3ecc6308fc1ec92a18ab59da9", null ],
     [ "ecs_index", "struct_i_c_s_reactions.html#a46eeba592227c6cceb26ce3a14dec810", null ],
+    [ "ecs_offset_index", "struct_i_c_s_reactions.html#a58371947d47e49fcd3889beb47bd8ed6", null ],
     [ "ecs_state", "struct_i_c_s_reactions.html#ab7fcc79e4ab29fa1ba547216df25fe48", null ],
     [ "ecsN", "struct_i_c_s_reactions.html#ae95884e399383c592ab44b5bec1c4443", null ],
     [ "icsN", "struct_i_c_s_reactions.html#a7410bc465ccc7295a6dcc92e6567041a", null ],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NEURON: /home/travis/build/neuronsimulator/nrn/src/nrnoc/gui-redirect.h File Reference</title>
+<title>NEURON: /home/runner/work/nrn/nrn/src/nrnoc/gui-redirect.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,12 +87,15 @@ $(document).ready(function(){initNavTree('gui-redirect_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">gui-redirect.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="hocdec_8h_source.html">hocdec.h</a>&quot;</code><br />
+</div>
 <p><a href="gui-redirect_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -115,6 +118,19 @@ Macros</h2></td></tr>
 <tr class="separator:aa7981f779be7227baafa2ae344156be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f7bfb25833f1e1e8ea745735000241"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui-redirect_8h.html#a82f7bfb25833f1e1e8ea745735000241">TRY_GUI_REDIRECT_DOUBLE_SEND_STRREF</a>(<a class="el" href="hocmodl_8h.html#a5ac083a645d964373f022d03df4849c8">name</a>,  obj)</td></tr>
 <tr class="separator:a82f7bfb25833f1e1e8ea745735000241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa23f934dbab925f51543054a2c649b29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui-redirect_8h.html#aa23f934dbab925f51543054a2c649b29">nrn_get_gui_redirect_obj</a> ()</td></tr>
+<tr class="separator:aa23f934dbab925f51543054a2c649b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:accd5a2d17541f8438c84d6d094035e29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_object.html">Object</a> **(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a> )(const char *, <a class="el" href="struct_object.html">Object</a> *)</td></tr>
+<tr class="memdesc:accd5a2d17541f8438c84d6d094035e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">HAVE_IV.  <a href="#accd5a2d17541f8438c84d6d094035e29">More...</a><br /></td></tr>
+<tr class="separator:accd5a2d17541f8438c84d6d094035e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a122c219f19dd2ae3a117bad41356f6"><td class="memItemLeft" align="right" valign="top">double(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui-redirect_8h.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a> )(<a class="el" href="struct_object.html">Object</a> *)</td></tr>
+<tr class="separator:a5a122c219f19dd2ae3a117bad41356f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a0541e8073aa54dab28b283cfb6079a5e"></a>
@@ -142,12 +158,12 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            return(<a class="code" href="graph_8cpp.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a>(*ngh_result));\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="graph_8cpp_html_a462c26573dc4a8e19c38a2d21a6dff3d"><div class="ttname"><a href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *name, Object *obj)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00016">xmenu.cpp:16</a></div></div>
-<div class="ttc" id="graph_8cpp_html_a5a122c219f19dd2ae3a117bad41356f6"><div class="ttname"><a href="graph_8cpp.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a></div><div class="ttdeci">double(* nrnpy_object_to_double_)(Object *)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00017">xmenu.cpp:17</a></div></div>
-<div class="ttc" id="modlunit_2init_8c_html_a5ac083a645d964373f022d03df4849c8"><div class="ttname"><a href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8c_source.html#l00016">init.c:16</a></div></div>
-<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00223">hocdec.h:223</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            return(<a class="code" href="gui-redirect_8h.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a>(*ngh_result));\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="gui-redirect_8h_html_a5a122c219f19dd2ae3a117bad41356f6"><div class="ttname"><a href="gui-redirect_8h.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a></div><div class="ttdeci">double(* nrnpy_object_to_double_)(Object *)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00014">xmenu.cpp:14</a></div></div>
+<div class="ttc" id="gui-redirect_8h_html_accd5a2d17541f8438c84d6d094035e29"><div class="ttname"><a href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *, Object *)</div><div class="ttdoc">HAVE_IV. </div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00013">xmenu.cpp:13</a></div></div>
+<div class="ttc" id="modlunit_2init_8cpp_html_ad547fb8186b526cb1b588daad4334fbe"><div class="ttname"><a href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8cpp_source.html#l00016">init.cpp:16</a></div></div>
+<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00226">hocdec.h:226</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00068">68</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00066">66</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
 
 </div>
 </div>
@@ -176,11 +192,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            return ngh_result;\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="graph_8cpp_html_a462c26573dc4a8e19c38a2d21a6dff3d"><div class="ttname"><a href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *name, Object *obj)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00016">xmenu.cpp:16</a></div></div>
-<div class="ttc" id="modlunit_2init_8c_html_a5ac083a645d964373f022d03df4849c8"><div class="ttname"><a href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8c_source.html#l00016">init.c:16</a></div></div>
-<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00223">hocdec.h:223</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            return ngh_result;\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="gui-redirect_8h_html_accd5a2d17541f8438c84d6d094035e29"><div class="ttname"><a href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *, Object *)</div><div class="ttdoc">HAVE_IV. </div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00013">xmenu.cpp:13</a></div></div>
+<div class="ttc" id="modlunit_2init_8cpp_html_ad547fb8186b526cb1b588daad4334fbe"><div class="ttname"><a href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8cpp_source.html#l00016">init.cpp:16</a></div></div>
+<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00226">hocdec.h:226</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00088">88</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00086">86</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
 
 </div>
 </div>
@@ -209,12 +225,12 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    char** ngh_result;\</div><div class="line">    if (<a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="mlinedit_8cpp.html#ac1079a5dbe6eb309d56e41bdbf3b869e">nrnpy_gui_helper3_str_</a>(<a class="code" href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj, 0);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            return((<span class="keyword">const</span> <span class="keywordtype">char</span>**) ngh_result);\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="graph_8cpp_html_a462c26573dc4a8e19c38a2d21a6dff3d"><div class="ttname"><a href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *name, Object *obj)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00016">xmenu.cpp:16</a></div></div>
-<div class="ttc" id="modlunit_2init_8c_html_a5ac083a645d964373f022d03df4849c8"><div class="ttname"><a href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8c_source.html#l00016">init.c:16</a></div></div>
-<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00223">hocdec.h:223</a></div></div>
-<div class="ttc" id="mlinedit_8cpp_html_ac1079a5dbe6eb309d56e41bdbf3b869e"><div class="ttname"><a href="mlinedit_8cpp.html#ac1079a5dbe6eb309d56e41bdbf3b869e">nrnpy_gui_helper3_str_</a></div><div class="ttdeci">char **(* nrnpy_gui_helper3_str_)(const char *name, Object *obj, int handle_strptr)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00019">xmenu.cpp:19</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    char** ngh_result;\</div><div class="line">    if (<a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="mlinedit_8cpp.html#ac1079a5dbe6eb309d56e41bdbf3b869e">nrnpy_gui_helper3_str_</a>(<a class="code" href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj, 0);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            return((<span class="keyword">const</span> <span class="keywordtype">char</span>**) ngh_result);\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="gui-redirect_8h_html_accd5a2d17541f8438c84d6d094035e29"><div class="ttname"><a href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *, Object *)</div><div class="ttdoc">HAVE_IV. </div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00013">xmenu.cpp:13</a></div></div>
+<div class="ttc" id="modlunit_2init_8cpp_html_ad547fb8186b526cb1b588daad4334fbe"><div class="ttname"><a href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8cpp_source.html#l00016">init.cpp:16</a></div></div>
+<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00226">hocdec.h:226</a></div></div>
+<div class="ttc" id="mlinedit_8cpp_html_ac1079a5dbe6eb309d56e41bdbf3b869e"><div class="ttname"><a href="mlinedit_8cpp.html#ac1079a5dbe6eb309d56e41bdbf3b869e">nrnpy_gui_helper3_str_</a></div><div class="ttdeci">char **(* nrnpy_gui_helper3_str_)(const char *name, Object *obj, int handle_strptr)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00016">xmenu.cpp:16</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00078">78</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00076">76</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
 
 </div>
 </div>
@@ -243,12 +259,12 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            hoc_ret();\</div><div class="line">            hoc_pushx(<a class="code" href="graph_8cpp.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a>(*ngh_result));\</div><div class="line">            return;\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="graph_8cpp_html_a462c26573dc4a8e19c38a2d21a6dff3d"><div class="ttname"><a href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *name, Object *obj)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00016">xmenu.cpp:16</a></div></div>
-<div class="ttc" id="graph_8cpp_html_a5a122c219f19dd2ae3a117bad41356f6"><div class="ttname"><a href="graph_8cpp.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a></div><div class="ttdeci">double(* nrnpy_object_to_double_)(Object *)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00017">xmenu.cpp:17</a></div></div>
-<div class="ttc" id="modlunit_2init_8c_html_a5ac083a645d964373f022d03df4849c8"><div class="ttname"><a href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8c_source.html#l00016">init.c:16</a></div></div>
-<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00223">hocdec.h:223</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            hoc_ret();\</div><div class="line">            hoc_pushx(<a class="code" href="gui-redirect_8h.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a>(*ngh_result));\</div><div class="line">            return;\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="gui-redirect_8h_html_a5a122c219f19dd2ae3a117bad41356f6"><div class="ttname"><a href="gui-redirect_8h.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a></div><div class="ttdeci">double(* nrnpy_object_to_double_)(Object *)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00014">xmenu.cpp:14</a></div></div>
+<div class="ttc" id="gui-redirect_8h_html_accd5a2d17541f8438c84d6d094035e29"><div class="ttname"><a href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *, Object *)</div><div class="ttdoc">HAVE_IV. </div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00013">xmenu.cpp:13</a></div></div>
+<div class="ttc" id="modlunit_2init_8cpp_html_ad547fb8186b526cb1b588daad4334fbe"><div class="ttname"><a href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8cpp_source.html#l00016">init.cpp:16</a></div></div>
+<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00226">hocdec.h:226</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00056">56</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00054">54</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
 
 </div>
 </div>
@@ -277,13 +293,13 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="ocnoiv1_8cpp.html#a872c4cc782bd865ac6ea70d5f9bf5572">nrnpy_gui_helper3_</a>(<a class="code" href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj, 1);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            hoc_ret();\</div><div class="line">            hoc_pushx(<a class="code" href="graph_8cpp.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a>(*ngh_result));\</div><div class="line">            return;\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="graph_8cpp_html_a462c26573dc4a8e19c38a2d21a6dff3d"><div class="ttname"><a href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *name, Object *obj)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00016">xmenu.cpp:16</a></div></div>
-<div class="ttc" id="graph_8cpp_html_a5a122c219f19dd2ae3a117bad41356f6"><div class="ttname"><a href="graph_8cpp.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a></div><div class="ttdeci">double(* nrnpy_object_to_double_)(Object *)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00017">xmenu.cpp:17</a></div></div>
-<div class="ttc" id="modlunit_2init_8c_html_a5ac083a645d964373f022d03df4849c8"><div class="ttname"><a href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8c_source.html#l00016">init.c:16</a></div></div>
-<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00223">hocdec.h:223</a></div></div>
-<div class="ttc" id="ocnoiv1_8cpp_html_a872c4cc782bd865ac6ea70d5f9bf5572"><div class="ttname"><a href="ocnoiv1_8cpp.html#a872c4cc782bd865ac6ea70d5f9bf5572">nrnpy_gui_helper3_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper3_)(const char *name, Object *obj, int handle_strptr)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00018">xmenu.cpp:18</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="ocnoiv1_8cpp.html#a872c4cc782bd865ac6ea70d5f9bf5572">nrnpy_gui_helper3_</a>(<a class="code" href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj, 1);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            hoc_ret();\</div><div class="line">            hoc_pushx(<a class="code" href="gui-redirect_8h.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a>(*ngh_result));\</div><div class="line">            return;\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="gui-redirect_8h_html_a5a122c219f19dd2ae3a117bad41356f6"><div class="ttname"><a href="gui-redirect_8h.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a></div><div class="ttdeci">double(* nrnpy_object_to_double_)(Object *)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00014">xmenu.cpp:14</a></div></div>
+<div class="ttc" id="gui-redirect_8h_html_accd5a2d17541f8438c84d6d094035e29"><div class="ttname"><a href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *, Object *)</div><div class="ttdoc">HAVE_IV. </div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00013">xmenu.cpp:13</a></div></div>
+<div class="ttc" id="modlunit_2init_8cpp_html_ad547fb8186b526cb1b588daad4334fbe"><div class="ttname"><a href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8cpp_source.html#l00016">init.cpp:16</a></div></div>
+<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00226">hocdec.h:226</a></div></div>
+<div class="ttc" id="ocnoiv1_8cpp_html_a872c4cc782bd865ac6ea70d5f9bf5572"><div class="ttname"><a href="ocnoiv1_8cpp.html#a872c4cc782bd865ac6ea70d5f9bf5572">nrnpy_gui_helper3_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper3_)(const char *name, Object *obj, int handle_strptr)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00015">xmenu.cpp:15</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00098">98</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00096">96</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
 
 </div>
 </div>
@@ -318,15 +334,13 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** guiredirect_result = <a class="code" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>; \</div><div class="line">    if (<a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>) {\</div><div class="line">        Object* obj = (<a class="code" href="struct_object.html">Object</a>*) <a class="code" href="modlunit_2parse1_8c.html#a5faf6a2d99f50a4655dd390199a8db7b">malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="struct_object.html">Object</a>));\</div><div class="line">        obj-&gt;ctemplate = sym-&gt;u.ctemplate;\</div><div class="line">        obj-&gt;refcount = 1;\</div><div class="line">        obj-&gt;index = -1;\</div><div class="line">        obj-&gt;u.this_pointer = <a class="code" href="apcount_8c.html#a38bf1e5e0427bdeba2b469eea9befc23">v</a>;\</div><div class="line">        guiredirect_result = <a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a>, obj);\</div><div class="line">        <span class="comment">/*free(obj);*/</span> \</div><div class="line">        if (guiredirect_result) { \</div><div class="line">            return(<a class="code" href="graph_8cpp.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a>(*guiredirect_result)); \</div><div class="line">        } \</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="cabcode_8c_html_a1a05ede2ad100bf5de5dfa7ccdfa4397"><div class="ttname"><a href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></div><div class="ttdeci">return NULL</div><div class="ttdef"><b>Definition:</b> <a href="cabcode_8c_source.html#l00454">cabcode.c:454</a></div></div>
-<div class="ttc" id="apcount_8c_html_a38bf1e5e0427bdeba2b469eea9befc23"><div class="ttname"><a href="apcount_8c.html#a38bf1e5e0427bdeba2b469eea9befc23">v</a></div><div class="ttdeci">#define v</div><div class="ttdef"><b>Definition:</b> <a href="apcount_8c_source.html#l00053">apcount.c:53</a></div></div>
-<div class="ttc" id="graph_8cpp_html_a462c26573dc4a8e19c38a2d21a6dff3d"><div class="ttname"><a href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *name, Object *obj)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00016">xmenu.cpp:16</a></div></div>
-<div class="ttc" id="graph_8cpp_html_a5a122c219f19dd2ae3a117bad41356f6"><div class="ttname"><a href="graph_8cpp.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a></div><div class="ttdeci">double(* nrnpy_object_to_double_)(Object *)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00017">xmenu.cpp:17</a></div></div>
-<div class="ttc" id="modlunit_2init_8c_html_a5ac083a645d964373f022d03df4849c8"><div class="ttname"><a href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8c_source.html#l00016">init.c:16</a></div></div>
-<div class="ttc" id="modlunit_2parse1_8c_html_a5faf6a2d99f50a4655dd390199a8db7b"><div class="ttname"><a href="modlunit_2parse1_8c.html#a5faf6a2d99f50a4655dd390199a8db7b">malloc</a></div><div class="ttdeci">void * malloc(YYSIZE_T)</div></div>
-<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00223">hocdec.h:223</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** guiredirect_result = <a class="code" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>;\</div><div class="line">    if (<a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>) {\</div><div class="line">        Object* obj = <a class="code" href="gui-redirect_8h.html#aa23f934dbab925f51543054a2c649b29">nrn_get_gui_redirect_obj</a>();\</div><div class="line">        guiredirect_result = <a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a>, obj);\</div><div class="line">        if (guiredirect_result) {\</div><div class="line">            return(<a class="code" href="gui-redirect_8h.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a>(*guiredirect_result));\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="gui-redirect_8h_html_a5a122c219f19dd2ae3a117bad41356f6"><div class="ttname"><a href="gui-redirect_8h.html#a5a122c219f19dd2ae3a117bad41356f6">nrnpy_object_to_double_</a></div><div class="ttdeci">double(* nrnpy_object_to_double_)(Object *)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00014">xmenu.cpp:14</a></div></div>
+<div class="ttc" id="gui-redirect_8h_html_accd5a2d17541f8438c84d6d094035e29"><div class="ttname"><a href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *, Object *)</div><div class="ttdoc">HAVE_IV. </div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00013">xmenu.cpp:13</a></div></div>
+<div class="ttc" id="gui-redirect_8h_html_aa23f934dbab925f51543054a2c649b29"><div class="ttname"><a href="gui-redirect_8h.html#aa23f934dbab925f51543054a2c649b29">nrn_get_gui_redirect_obj</a></div><div class="ttdeci">Object * nrn_get_gui_redirect_obj()</div><div class="ttdef"><b>Definition:</b> <a href="oc_2hoc__oop_8cpp_source.html#l00724">hoc_oop.cpp:724</a></div></div>
+<div class="ttc" id="modlunit_2init_8cpp_html_ad547fb8186b526cb1b588daad4334fbe"><div class="ttname"><a href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8cpp_source.html#l00016">init.cpp:16</a></div></div>
+<div class="ttc" id="cabcode_8cpp_html_a1a05ede2ad100bf5de5dfa7ccdfa4397"><div class="ttname"><a href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></div><div class="ttdeci">return NULL</div><div class="ttdef"><b>Definition:</b> <a href="cabcode_8cpp_source.html#l00458">cabcode.cpp:458</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00014">14</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00022">22</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
 
 </div>
 </div>
@@ -361,14 +375,12 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** guiredirect_result = <a class="code" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>; \</div><div class="line">    if (<a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>) {\</div><div class="line">        Object* obj = (<a class="code" href="struct_object.html">Object</a>*) <a class="code" href="modlunit_2parse1_8c.html#a5faf6a2d99f50a4655dd390199a8db7b">malloc</a>(<span class="keyword">sizeof</span>(<a class="code" href="struct_object.html">Object</a>));\</div><div class="line">        obj-&gt;ctemplate = sym-&gt;u.ctemplate;\</div><div class="line">        obj-&gt;refcount = 1;\</div><div class="line">        obj-&gt;index = -1;\</div><div class="line">        obj-&gt;u.this_pointer = <a class="code" href="apcount_8c.html#a38bf1e5e0427bdeba2b469eea9befc23">v</a>;\</div><div class="line">        guiredirect_result = <a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a>, obj);\</div><div class="line">        <span class="comment">/*free(obj);*/</span> \</div><div class="line">        if (guiredirect_result) { \</div><div class="line">            return(guiredirect_result); \</div><div class="line">        } \</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="cabcode_8c_html_a1a05ede2ad100bf5de5dfa7ccdfa4397"><div class="ttname"><a href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></div><div class="ttdeci">return NULL</div><div class="ttdef"><b>Definition:</b> <a href="cabcode_8c_source.html#l00454">cabcode.c:454</a></div></div>
-<div class="ttc" id="apcount_8c_html_a38bf1e5e0427bdeba2b469eea9befc23"><div class="ttname"><a href="apcount_8c.html#a38bf1e5e0427bdeba2b469eea9befc23">v</a></div><div class="ttdeci">#define v</div><div class="ttdef"><b>Definition:</b> <a href="apcount_8c_source.html#l00053">apcount.c:53</a></div></div>
-<div class="ttc" id="graph_8cpp_html_a462c26573dc4a8e19c38a2d21a6dff3d"><div class="ttname"><a href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *name, Object *obj)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00016">xmenu.cpp:16</a></div></div>
-<div class="ttc" id="modlunit_2init_8c_html_a5ac083a645d964373f022d03df4849c8"><div class="ttname"><a href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8c_source.html#l00016">init.c:16</a></div></div>
-<div class="ttc" id="modlunit_2parse1_8c_html_a5faf6a2d99f50a4655dd390199a8db7b"><div class="ttname"><a href="modlunit_2parse1_8c.html#a5faf6a2d99f50a4655dd390199a8db7b">malloc</a></div><div class="ttdeci">void * malloc(YYSIZE_T)</div></div>
-<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00223">hocdec.h:223</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** guiredirect_result = <a class="code" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>;\</div><div class="line">    if (<a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>) {\</div><div class="line">        Object* obj = <a class="code" href="gui-redirect_8h.html#aa23f934dbab925f51543054a2c649b29">nrn_get_gui_redirect_obj</a>();\</div><div class="line">        guiredirect_result = <a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a>, obj);\</div><div class="line">        if (guiredirect_result) {\</div><div class="line">            return(guiredirect_result);\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="gui-redirect_8h_html_accd5a2d17541f8438c84d6d094035e29"><div class="ttname"><a href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *, Object *)</div><div class="ttdoc">HAVE_IV. </div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00013">xmenu.cpp:13</a></div></div>
+<div class="ttc" id="gui-redirect_8h_html_aa23f934dbab925f51543054a2c649b29"><div class="ttname"><a href="gui-redirect_8h.html#aa23f934dbab925f51543054a2c649b29">nrn_get_gui_redirect_obj</a></div><div class="ttdeci">Object * nrn_get_gui_redirect_obj()</div><div class="ttdef"><b>Definition:</b> <a href="oc_2hoc__oop_8cpp_source.html#l00724">hoc_oop.cpp:724</a></div></div>
+<div class="ttc" id="modlunit_2init_8cpp_html_ad547fb8186b526cb1b588daad4334fbe"><div class="ttname"><a href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8cpp_source.html#l00016">init.cpp:16</a></div></div>
+<div class="ttc" id="cabcode_8cpp_html_a1a05ede2ad100bf5de5dfa7ccdfa4397"><div class="ttname"><a href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></div><div class="ttdeci">return NULL</div><div class="ttdef"><b>Definition:</b> <a href="cabcode_8cpp_source.html#l00458">cabcode.cpp:458</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00030">30</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00033">33</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
 
 </div>
 </div>
@@ -397,11 +409,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            return;\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="graph_8cpp_html_a462c26573dc4a8e19c38a2d21a6dff3d"><div class="ttname"><a href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *name, Object *obj)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00016">xmenu.cpp:16</a></div></div>
-<div class="ttc" id="modlunit_2init_8c_html_a5ac083a645d964373f022d03df4849c8"><div class="ttname"><a href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8c_source.html#l00016">init.c:16</a></div></div>
-<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00223">hocdec.h:223</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            return;\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="gui-redirect_8h_html_accd5a2d17541f8438c84d6d094035e29"><div class="ttname"><a href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *, Object *)</div><div class="ttdoc">HAVE_IV. </div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00013">xmenu.cpp:13</a></div></div>
+<div class="ttc" id="modlunit_2init_8cpp_html_ad547fb8186b526cb1b588daad4334fbe"><div class="ttname"><a href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8cpp_source.html#l00016">init.cpp:16</a></div></div>
+<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00226">hocdec.h:226</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00046">46</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00044">44</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
 
 </div>
 </div>
@@ -430,11 +442,66 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            return (<span class="keywordtype">void</span>*) *ngh_result;\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="graph_8cpp_html_a462c26573dc4a8e19c38a2d21a6dff3d"><div class="ttname"><a href="graph_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *name, Object *obj)</div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00016">xmenu.cpp:16</a></div></div>
-<div class="ttc" id="modlunit_2init_8c_html_a5ac083a645d964373f022d03df4849c8"><div class="ttname"><a href="modlunit_2init_8c.html#a5ac083a645d964373f022d03df4849c8">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8c_source.html#l00016">init.c:16</a></div></div>
-<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00223">hocdec.h:223</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">{\</div><div class="line">    Object** ngh_result;\</div><div class="line">    if (<a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>) {\</div><div class="line">        ngh_result = <a class="code" href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a>(<a class="code" href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a>, (<a class="code" href="struct_object.html">Object</a>*) obj);\</div><div class="line">        if (ngh_result) {\</div><div class="line">            return (<span class="keywordtype">void</span>*) *ngh_result;\</div><div class="line">        }\</div><div class="line">    }\</div><div class="line">}</div><div class="ttc" id="gui-redirect_8h_html_accd5a2d17541f8438c84d6d094035e29"><div class="ttname"><a href="gui-redirect_8h.html#accd5a2d17541f8438c84d6d094035e29">nrnpy_gui_helper_</a></div><div class="ttdeci">Object **(* nrnpy_gui_helper_)(const char *, Object *)</div><div class="ttdoc">HAVE_IV. </div><div class="ttdef"><b>Definition:</b> <a href="xmenu_8cpp_source.html#l00013">xmenu.cpp:13</a></div></div>
+<div class="ttc" id="modlunit_2init_8cpp_html_ad547fb8186b526cb1b588daad4334fbe"><div class="ttname"><a href="modlunit_2init_8cpp.html#ad547fb8186b526cb1b588daad4334fbe">name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="modlunit_2init_8cpp_source.html#l00016">init.cpp:16</a></div></div>
+<div class="ttc" id="struct_object_html"><div class="ttname"><a href="struct_object.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="hocdec_8h_source.html#l00226">hocdec.h:226</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00004">4</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui-redirect_8h_source.html#l00012">12</a> of file <a class="el" href="gui-redirect_8h_source.html">gui-redirect.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa23f934dbab925f51543054a2c649b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23f934dbab925f51543054a2c649b29">&#9670;&nbsp;</a></span>nrn_get_gui_redirect_obj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_object.html">Object</a>* nrn_get_gui_redirect_obj </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="oc_2hoc__oop_8cpp_source.html#l00724">724</a> of file <a class="el" href="oc_2hoc__oop_8cpp_source.html">hoc_oop.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="accd5a2d17541f8438c84d6d094035e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd5a2d17541f8438c84d6d094035e29">&#9670;&nbsp;</a></span>nrnpy_gui_helper_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_object.html">Object</a>**(* nrnpy_gui_helper_) (const char *, <a class="el" href="struct_object.html">Object</a> *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HAVE_IV. </p>
+
+<p class="definition">Definition at line <a class="el" href="xmenu_8cpp_source.html#l00013">13</a> of file <a class="el" href="xmenu_8cpp_source.html">xmenu.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5a122c219f19dd2ae3a117bad41356f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a122c219f19dd2ae3a117bad41356f6">&#9670;&nbsp;</a></span>nrnpy_object_to_double_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double(* nrnpy_object_to_double_) (<a class="el" href="struct_object.html">Object</a> *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="xmenu_8cpp_source.html#l00014">14</a> of file <a class="el" href="xmenu_8cpp_source.html">xmenu.cpp</a>.</p>
 
 </div>
 </div>

@@ -37,6 +37,7 @@ var neuron_8h =
     [ "make_pointprocess", "neuron_8h.html#a45b88d16af4779c2f5b82a4dad46ebda", null ],
     [ "n3d", "neuron_8h.html#a9110c967fd1c475af2e9ef3fa77922f5", null ],
     [ "nernst", "neuron_8h.html#abb5f3c0e6fb498a502ee2b5386c97ff9", null ],
+    [ "nlayer_extracellular", "neuron_8h.html#a4a570b3cfd356566724e4f0d3cd10990", null ],
     [ "node_data", "neuron_8h.html#ab1f30eeb5340af069bf344eb69484d71", null ],
     [ "nrnallpointmenu", "neuron_8h.html#ab22fd03230c0c60a5fb7ec1890141491", null ],
     [ "nrnallsectionmenu", "neuron_8h.html#a8512340779d934d26554425fad945585", null ],
@@ -46,6 +47,7 @@ var neuron_8h =
     [ "nrnpointmenu", "neuron_8h.html#abb0dc6db0554fe9fa88ce3af5fee4ca2", null ],
     [ "nrnpython", "neuron_8h.html#aebddf5f83676792f282eda2b7f23ff42", null ],
     [ "nrnsecmenu", "neuron_8h.html#acbb2d863441fd92168d998d6593d0216", null ],
+    [ "nrnunit_use_legacy", "neuron_8h.html#a1dd9ebb9907ad57c48ed8185394d176e", null ],
     [ "parent_connection", "neuron_8h.html#aeb271de4356ed3010b169d364ed7ab01", null ],
     [ "parent_node", "neuron_8h.html#a25c8fc86c4d349ce26f3b50bc8c77fdd", null ],
     [ "parent_section", "neuron_8h.html#a916028307ca6518c16bcc0962d0331ae", null ],
@@ -79,6 +81,7 @@ var neuron_8h =
     [ "diam_changed", "neuron_8h.html#a055fc56c2aed7bb78089112cd3d2a62c", null ],
     [ "nrn_netrec_state_adjust", "neuron_8h.html#a682a9117b660780e7551d40110777980", null ],
     [ "nrn_shape_changed_", "neuron_8h.html#a589bc1a5a09862bb7f797ee6c693791e", null ],
+    [ "nrn_sparse_partrans", "neuron_8h.html#af2cf9c1902788381b0a7f2a3c79b6c51", null ],
     [ "secondorder", "neuron_8h.html#a984807412b7df3aff69549693a1fa9ce", null ],
     [ "stoprun", "neuron_8h.html#a0d4507488759efb672f5e8039b549ed7", null ]
 ];

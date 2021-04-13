@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NEURON: /home/travis/build/neuronsimulator/nrn/src/nrnpython/grids.h File Reference</title>
+<title>NEURON: /home/runner/work/nrn/nrn/src/nrnpython/grids.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -138,17 +138,17 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a831ee0dbf4c2fb839d2018626b218d13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a831ee0dbf4c2fb839d2018626b218d13">DIE</a>(msg)&#160;&#160;&#160;<a class="el" href="memacs_2redef_8h.html#a5134b2f308b8e125e5f987ac66222050">exit</a>(<a class="el" href="treeset_8c.html#a90db4c8ea76e4a6a14363cd92e22932a">fprintf</a>(stderr, &quot;%s\n&quot;, msg))</td></tr>
+<tr class="memitem:a831ee0dbf4c2fb839d2018626b218d13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a831ee0dbf4c2fb839d2018626b218d13">DIE</a>(msg)&#160;&#160;&#160;<a class="el" href="memacs_2redef_8h.html#aa66fcb9a1097bc8c83c6efb3f4bc43ce">exit</a>(<a class="el" href="treeset_8cpp.html#a90db4c8ea76e4a6a14363cd92e22932a">fprintf</a>(stderr, &quot;%s\n&quot;, msg))</td></tr>
 <tr class="separator:a831ee0dbf4c2fb839d2018626b218d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5778427dcd0b3f99b0fc0be7018ec96c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a5778427dcd0b3f99b0fc0be7018ec96c">SAFE_FREE</a>(<a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a>)&#160;&#160;&#160;{<a class="el" href="sputils_8c.html#a48028848082eacf1effc705afef728ec">if</a>((<a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a>)!=<a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>) <a class="el" href="parse_8c.html#af07d89f5ceaea0c7c8252cc41fd75f37">free</a>(<a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a>);}</td></tr>
+<tr class="memitem:a5778427dcd0b3f99b0fc0be7018ec96c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a5778427dcd0b3f99b0fc0be7018ec96c">SAFE_FREE</a>(<a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a>)&#160;&#160;&#160;{<a class="el" href="sputils_8c.html#a48028848082eacf1effc705afef728ec">if</a>((<a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a>)!=<a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>) <a class="el" href="parse_8cpp.html#af07d89f5ceaea0c7c8252cc41fd75f37">free</a>(<a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a>);}</td></tr>
 <tr class="separator:a5778427dcd0b3f99b0fc0be7018ec96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f47bc31888f4e5780f83d413c4c512f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a0f47bc31888f4e5780f83d413c4c512f">IDX</a>(x,  y,  z)&#160;&#160;&#160;((z) + (y) * <a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;size_z + (x) * <a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;size_z * <a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;size_y)</td></tr>
 <tr class="separator:a0f47bc31888f4e5780f83d413c4c512f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13ce4f696dd4ff83d9dc30232a1a3501"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a13ce4f696dd4ff83d9dc30232a1a3501">INDEX</a>(x,  y,  z)&#160;&#160;&#160;((z) + (y) * grid-&gt;size_z + (x) * grid-&gt;size_z * grid-&gt;size_y)</td></tr>
 <tr class="separator:a13ce4f696dd4ff83d9dc30232a1a3501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac83bc5fa72de5d8664756ee3686a22d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#ac83bc5fa72de5d8664756ee3686a22d4">ALPHA</a>(x,  y,  z)&#160;&#160;&#160;(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;get_alpha(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;<a class="el" href="synapse_8c.html#a528875da77aaf31b90a7fcb73b9a8fc7">alpha</a>,<a class="el" href="grids_8h.html#a0f47bc31888f4e5780f83d413c4c512f">IDX</a>(x,y,z)))</td></tr>
+<tr class="memitem:ac83bc5fa72de5d8664756ee3686a22d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#ac83bc5fa72de5d8664756ee3686a22d4">ALPHA</a>(x,  y,  z)&#160;&#160;&#160;(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;get_alpha(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;<a class="el" href="synapse_8cpp.html#a528875da77aaf31b90a7fcb73b9a8fc7">alpha</a>,<a class="el" href="grids_8h.html#a0f47bc31888f4e5780f83d413c4c512f">IDX</a>(x,y,z)))</td></tr>
 <tr class="separator:ac83bc5fa72de5d8664756ee3686a22d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8e9b9ecacfdf75f6104cd4d509cfef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a4c8e9b9ecacfdf75f6104cd4d509cfef">VOLFRAC</a>(idx)&#160;&#160;&#160;(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;get_alpha(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;<a class="el" href="synapse_8c.html#a528875da77aaf31b90a7fcb73b9a8fc7">alpha</a>,idx))</td></tr>
+<tr class="memitem:a4c8e9b9ecacfdf75f6104cd4d509cfef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a4c8e9b9ecacfdf75f6104cd4d509cfef">VOLFRAC</a>(idx)&#160;&#160;&#160;(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;get_alpha(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;<a class="el" href="synapse_8cpp.html#a528875da77aaf31b90a7fcb73b9a8fc7">alpha</a>,idx))</td></tr>
 <tr class="separator:a4c8e9b9ecacfdf75f6104cd4d509cfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed0291bb21c62f38edbcb675d773c5b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#aed0291bb21c62f38edbcb675d773c5b8">TORT</a>(idx)&#160;&#160;&#160;(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;get_lambda(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;lambda,idx))</td></tr>
 <tr class="separator:aed0291bb21c62f38edbcb675d773c5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,9 +172,9 @@ Macros</h2></td></tr>
 <tr class="separator:a51797caca5345b74878d779803ccb66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd94446e32cbe1158bcce43fa798ed6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a7cd94446e32cbe1158bcce43fa798ed6">DIRICHLET</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a7cd94446e32cbe1158bcce43fa798ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>,  <a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>)&#160;&#160;&#160;((<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>)&gt;(<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>)?(<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>):(<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>))</td></tr>
+<tr class="memitem:afa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>,  <a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)&#160;&#160;&#160;((<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>)&gt;(<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)?(<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>):(<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>))</td></tr>
 <tr class="separator:afa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>,  <a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>)&#160;&#160;&#160;((<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>)&lt;(<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>)?(<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>):(<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>))</td></tr>
+<tr class="memitem:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>,  <a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)&#160;&#160;&#160;((<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>)&lt;(<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)?(<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>):(<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>))</td></tr>
 <tr class="separator:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -200,26 +200,16 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae48012659f3e14c5d34072087682259a"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#ae48012659f3e14c5d34072087682259a">get_alpha_scalar</a> (double *, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
-<tr class="separator:ae48012659f3e14c5d34072087682259a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6555be3b1cc24f3b5987abb5c2fbf5f8"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a6555be3b1cc24f3b5987abb5c2fbf5f8">get_alpha_array</a> (double *, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
-<tr class="separator:a6555be3b1cc24f3b5987abb5c2fbf5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a819cc49f6586fe5f588b2f20f5135cdc"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a819cc49f6586fe5f588b2f20f5135cdc">get_lambda_scalar</a> (double *, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
-<tr class="separator:a819cc49f6586fe5f588b2f20f5135cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160d4776d75bbe1d033fbdcafacc46f2"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a160d4776d75bbe1d033fbdcafacc46f2">get_lambda_array</a> (double *, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
-<tr class="separator:a160d4776d75bbe1d033fbdcafacc46f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a010110c98cdc0dcbe1699f95fe9ed499"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a010110c98cdc0dcbe1699f95fe9ed499">make_dt_ptr</a> (<a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_dt_ptr)</td></tr>
 <tr class="separator:a010110c98cdc0dcbe1699f95fe9ed499"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06a1e75dceab5ae64c882badc10d61b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_e_c_s___grid__node.html">ECS_Grid_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a06a1e75dceab5ae64c882badc10d61b8">ECS_make_Grid</a> (<a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_states, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> my_num_states_x, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> my_num_states_y, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> my_num_states_z, double my_dc_x, double my_dc_y, double my_dc_z, double my_dx, double my_dy, double my_dz, <a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_alpha, <a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_lambda, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, double, double)</td></tr>
-<tr class="separator:a06a1e75dceab5ae64c882badc10d61b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b0f9c63cc7b8d2a9445a2ea2ff060c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a92b0f9c63cc7b8d2a9445a2ea2ff060c">ECS_insert</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> grid_list_index, <a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_states, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> my_num_states_x, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> my_num_states_y, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> my_num_states_z, double my_dc_x, double my_dc_y, double my_dc_z, double my_dx, double my_dy, double my_dz, <a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_alpha, <a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_lambda, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, double, double)</td></tr>
 <tr class="separator:a92b0f9c63cc7b8d2a9445a2ea2ff060c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a655c3e9f91145af03007cac85a5a966a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_grid__node.html">Grid_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a655c3e9f91145af03007cac85a5a966a">ICS_make_Grid</a> (<a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_states, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> num_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *neighbors, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *ordered_x_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *ordered_y_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *ordered_z_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *x_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> x_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *y_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> y_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *z_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> z_lines_length, double *dcs, double dx, bool is_diffusable, double atolscale, double *ics_alphas)</td></tr>
-<tr class="separator:a655c3e9f91145af03007cac85a5a966a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a146ec5aad4575627bbff90fbb52b06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a5a146ec5aad4575627bbff90fbb52b06">ICS_insert</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> grid_list_index, <a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_states, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> num_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *neighbors, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *ordered_x_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *ordered_y_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *ordered_z_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *x_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> x_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *y_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> y_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *z_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> z_lines_length, double *dcs, double dx, bool is_diffusable, double atolscale, double *ics_alphas)</td></tr>
-<tr class="separator:a5a146ec5aad4575627bbff90fbb52b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a571e1cacaabc9ffd74064bd92582ef5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a571e1cacaabc9ffd74064bd92582ef5e">ICS_insert_inhom</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> grid_list_index, <a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_states, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> num_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *neighbors, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *ordered_x_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *ordered_y_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *ordered_z_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *x_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> x_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *y_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> y_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *z_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> z_lines_length, double *dcs, double dx, bool is_diffusable, double atolscale, double *ics_alphas)</td></tr>
-<tr class="separator:a571e1cacaabc9ffd74064bd92582ef5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8d71f2b873eedae73cbb80f9d4d454"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_grid__node.html">Grid_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a9c8d71f2b873eedae73cbb80f9d4d454">ICS_make_Grid</a> (<a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_states, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> num_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *neighbors, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *x_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> x_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *y_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> y_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *z_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> z_lines_length, double *dcs, double dx, bool is_diffusable, double atolscale, double *ics_alphas)</td></tr>
+<tr class="separator:a9c8d71f2b873eedae73cbb80f9d4d454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124051e3dccb3e0f06a21d2c79f13492"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a124051e3dccb3e0f06a21d2c79f13492">ICS_insert</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> grid_list_index, <a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_states, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> num_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *neighbors, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *x_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> x_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *y_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> y_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *z_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> z_lines_length, double *dcs, double dx, bool is_diffusable, double atolscale, double *ics_alphas)</td></tr>
+<tr class="separator:a124051e3dccb3e0f06a21d2c79f13492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6c72ca6a350c88f8775d1e04f98e31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a0d6c72ca6a350c88f8775d1e04f98e31">ICS_insert_inhom</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> grid_list_index, <a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *my_states, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> num_nodes, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *neighbors, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *x_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> x_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *y_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> y_lines_length, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *z_line_defs, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> z_lines_length, double *dcs, double dx, bool is_diffusable, double atolscale, double *ics_alphas)</td></tr>
+<tr class="separator:a0d6c72ca6a350c88f8775d1e04f98e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00cc33508abae79cec783f4cf96bf331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a00cc33508abae79cec783f4cf96bf331">set_diffusion</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, double *, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
 <tr class="separator:a00cc33508abae79cec783f4cf96bf331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b97678d98a63db8fa9cf71f42400af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#af5b97678d98a63db8fa9cf71f42400af">remove</a> (<a class="el" href="class_grid__node.html">Grid_node</a> **head, <a class="el" href="class_grid__node.html">Grid_node</a> *<a class="el" href="uxnrnbbs_2hel2mos_8cpp.html#aba0592d006a58ec6dba1e4e854ef9fa8">find</a>)</td></tr>
@@ -235,10 +225,6 @@ Variables</h2></td></tr>
 <tr class="separator:a080b607dd7a3dba1330d56784720ba4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a664c8b87764bc762cd1341d82a08f1b2"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a664c8b87764bc762cd1341d82a08f1b2">t_ptr</a></td></tr>
 <tr class="separator:a664c8b87764bc762cd1341d82a08f1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a327f0e7c84ce3650ff8f253c5c360b65"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#a327f0e7c84ce3650ff8f253c5c360b65">h_dt_ptr</a></td></tr>
-<tr class="separator:a327f0e7c84ce3650ff8f253c5c360b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f307b14517ca640a6a9cdb78d69f66"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#ae4f307b14517ca640a6a9cdb78d69f66">h_t_ptr</a></td></tr>
-<tr class="separator:ae4f307b14517ca640a6a9cdb78d69f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1d0cd754a3780cfe75b8a272aec9123"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_grid__node.html">Grid_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grids_8h.html#ae1d0cd754a3780cfe75b8a272aec9123">Parallel_grids</a> [100]</td></tr>
 <tr class="separator:ae1d0cd754a3780cfe75b8a272aec9123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -270,7 +256,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;get_alpha(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;<a class="el" href="synapse_8c.html#a528875da77aaf31b90a7fcb73b9a8fc7">alpha</a>,<a class="el" href="grids_8h.html#a0f47bc31888f4e5780f83d413c4c512f">IDX</a>(x,y,z)))</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;get_alpha(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;<a class="el" href="synapse_8cpp.html#a528875da77aaf31b90a7fcb73b9a8fc7">alpha</a>,<a class="el" href="grids_8h.html#a0f47bc31888f4e5780f83d413c4c512f">IDX</a>(x,y,z)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -310,7 +296,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">msg</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="memacs_2redef_8h.html#a5134b2f308b8e125e5f987ac66222050">exit</a>(<a class="el" href="treeset_8c.html#a90db4c8ea76e4a6a14363cd92e22932a">fprintf</a>(stderr, &quot;%s\n&quot;, msg))</td>
+          <td>&#160;&#160;&#160;<a class="el" href="memacs_2redef_8h.html#aa66fcb9a1097bc8c83c6efb3f4bc43ce">exit</a>(<a class="el" href="treeset_8cpp.html#a90db4c8ea76e4a6a14363cd92e22932a">fprintf</a>(stderr, &quot;%s\n&quot;, msg))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -485,18 +471,18 @@ Variables</h2></td></tr>
           <td class="memname">#define MAX</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>, </td>
+          <td class="paramname"><a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>&#160;</td>
+          <td class="paramname"><a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>)&gt;(<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>)?(<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>):(<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>)&gt;(<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)?(<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>):(<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -515,18 +501,18 @@ Variables</h2></td></tr>
           <td class="memname">#define MIN</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>, </td>
+          <td class="paramname"><a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>&#160;</td>
+          <td class="paramname"><a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>)&lt;(<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>)?(<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>):(<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>))</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>)&lt;(<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)?(<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>):(<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -562,7 +548,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a></td><td>)</td>
-          <td>&#160;&#160;&#160;{<a class="el" href="sputils_8c.html#a48028848082eacf1effc705afef728ec">if</a>((<a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a>)!=<a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>) <a class="el" href="parse_8c.html#af07d89f5ceaea0c7c8252cc41fd75f37">free</a>(<a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a>);}</td>
+          <td>&#160;&#160;&#160;{<a class="el" href="sputils_8c.html#a48028848082eacf1effc705afef728ec">if</a>((<a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a>)!=<a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>) <a class="el" href="parse_8cpp.html#af07d89f5ceaea0c7c8252cc41fd75f37">free</a>(<a class="el" href="pattern_8c.html#a62e445f378c3862b78618beec533f338">ptr</a>);}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -654,7 +640,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">idx</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;get_alpha(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;<a class="el" href="synapse_8c.html#a528875da77aaf31b90a7fcb73b9a8fc7">alpha</a>,idx))</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;get_alpha(<a class="el" href="syn_8c.html#a167d2c0ec9b943d55f2124f7442b2f6d">g</a>-&gt;<a class="el" href="synapse_8cpp.html#a528875da77aaf31b90a7fcb73b9a8fc7">alpha</a>,idx))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -861,7 +847,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00349">349</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00321">321</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -975,115 +961,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00168">168</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a06a1e75dceab5ae64c882badc10d61b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06a1e75dceab5ae64c882badc10d61b8">&#9670;&nbsp;</a></span>ECS_make_Grid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_e_c_s___grid__node.html">ECS_Grid_node</a>* ECS_make_Grid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *&#160;</td>
-          <td class="paramname"><em>my_states</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname"><em>my_num_states_x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname"><em>my_num_states_y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname"><em>my_num_states_z</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>my_dc_x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>my_dc_y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>my_dc_z</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>my_dx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>my_dy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>my_dz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *&#160;</td>
-          <td class="paramname"><em>my_alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_py_hoc_object.html">PyHocObject</a> *&#160;</td>
-          <td class="paramname"><em>my_lambda</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00037">37</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00195">195</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
 
 </div>
 </div>
@@ -1103,156 +981,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00615">615</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00630">630</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a6555be3b1cc24f3b5987abb5c2fbf5f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6555be3b1cc24f3b5987abb5c2fbf5f8">&#9670;&nbsp;</a></span>get_alpha_array()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static double get_alpha_array </td>
-          <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae48012659f3e14c5d34072087682259a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae48012659f3e14c5d34072087682259a">&#9670;&nbsp;</a></span>get_alpha_scalar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static double get_alpha_scalar </td>
-          <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a160d4776d75bbe1d033fbdcafacc46f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a160d4776d75bbe1d033fbdcafacc46f2">&#9670;&nbsp;</a></span>get_lambda_array()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static double get_lambda_array </td>
-          <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a819cc49f6586fe5f588b2f20f5135cdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a819cc49f6586fe5f588b2f20f5135cdc">&#9670;&nbsp;</a></span>get_lambda_scalar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static double get_lambda_scalar </td>
-          <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5a146ec5aad4575627bbff90fbb52b06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a146ec5aad4575627bbff90fbb52b06">&#9670;&nbsp;</a></span>ICS_insert()</h2>
+<a id="a124051e3dccb3e0f06a21d2c79f13492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a124051e3dccb3e0f06a21d2c79f13492">&#9670;&nbsp;</a></span>ICS_insert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1285,24 +1019,6 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
-          <td class="paramname"><em>ordered_x_nodes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
-          <td class="paramname"><em>ordered_y_nodes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
-          <td class="paramname"><em>ordered_z_nodes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
           <td class="paramname"><em>x_line_defs</em>, </td>
         </tr>
         <tr>
@@ -1373,12 +1089,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00331">331</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00354">354</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a571e1cacaabc9ffd74064bd92582ef5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a571e1cacaabc9ffd74064bd92582ef5e">&#9670;&nbsp;</a></span>ICS_insert_inhom()</h2>
+<a id="a0d6c72ca6a350c88f8775d1e04f98e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6c72ca6a350c88f8775d1e04f98e31">&#9670;&nbsp;</a></span>ICS_insert_inhom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1411,24 +1127,6 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
-          <td class="paramname"><em>ordered_x_nodes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
-          <td class="paramname"><em>ordered_y_nodes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
-          <td class="paramname"><em>ordered_z_nodes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
           <td class="paramname"><em>x_line_defs</em>, </td>
         </tr>
         <tr>
@@ -1499,12 +1197,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00343">343</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00365">365</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a655c3e9f91145af03007cac85a5a966a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a655c3e9f91145af03007cac85a5a966a">&#9670;&nbsp;</a></span>ICS_make_Grid()</h2>
+<a id="a9c8d71f2b873eedae73cbb80f9d4d454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8d71f2b873eedae73cbb80f9d4d454">&#9670;&nbsp;</a></span>ICS_make_Grid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1526,24 +1224,6 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
           <td class="paramname"><em>neighbors</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
-          <td class="paramname"><em>ordered_x_nodes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
-          <td class="paramname"><em>ordered_y_nodes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td>
-          <td class="paramname"><em>ordered_z_nodes</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1665,7 +1345,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00582">582</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00597">597</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
 
 </div>
 </div>
@@ -1707,7 +1387,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00355">355</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00375">375</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
 
 </div>
 </div>
@@ -1728,38 +1408,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a327f0e7c84ce3650ff8f253c5c360b65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a327f0e7c84ce3650ff8f253c5c360b65">&#9670;&nbsp;</a></span>h_dt_ptr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double* h_dt_ptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00016">16</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ae4f307b14517ca640a6a9cdb78d69f66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4f307b14517ca640a6a9cdb78d69f66">&#9670;&nbsp;</a></span>h_t_ptr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double* h_t_ptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00017">17</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
-
-</div>
-</div>
 <a id="ae1d0cd754a3780cfe75b8a272aec9123"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1d0cd754a3780cfe75b8a272aec9123">&#9670;&nbsp;</a></span>Parallel_grids</h2>
 
@@ -1772,7 +1420,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00018">18</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grids_8cpp_source.html#l00016">16</a> of file <a class="el" href="grids_8cpp_source.html">grids.cpp</a>.</p>
 
 </div>
 </div>

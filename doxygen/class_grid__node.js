@@ -1,8 +1,9 @@
 var class_grid__node =
 [
+    [ "~Grid_node", "class_grid__node.html#a9bb130932c15fc11acae8e8334d6941a", null ],
     [ "apply_node_flux3D", "class_grid__node.html#a07812363cca57e4a51d6c308f6a74ba8", null ],
     [ "dg_adi", "class_grid__node.html#adfa47f48c0c6df5f93ef277fc82f217b", null ],
-    [ "do_grid_currents", "class_grid__node.html#a6e00c595febdec815d785e29605541c4", null ],
+    [ "do_grid_currents", "class_grid__node.html#a94c52c0347b626a8ddcf0010a172ab4f", null ],
     [ "hybrid_connections", "class_grid__node.html#a37290a9dede7cb628410ebcf3a260d75", null ],
     [ "insert", "class_grid__node.html#ab1a2fb7c46ace4fc5f7d6da6e7261748", null ],
     [ "scatter_grid_concentrations", "class_grid__node.html#afec304c4d5081fd3f70fa464195170c9", null ],
@@ -10,7 +11,7 @@ var class_grid__node =
     [ "set_num_threads", "class_grid__node.html#a85c4dd1d731082ef5569cde5b2f9b4b9", null ],
     [ "variable_step_diffusion", "class_grid__node.html#a3a7a311c28d7ecc34a22f86b6d73d17d", null ],
     [ "variable_step_hybrid_connections", "class_grid__node.html#a2e1ce00797975cc9bd030162bfc59acc", null ],
-    [ "variable_step_ode_solve", "class_grid__node.html#a50f71b1547adb71b12f9fdc22c91aff4", null ],
+    [ "variable_step_ode_solve", "class_grid__node.html#a97c2616ed23ac4683a96eb9c0e02b36d", null ],
     [ "volume_setup", "class_grid__node.html#a800f00ed11e42cefedefae3a41644474", null ],
     [ "all_currents", "class_grid__node.html#ac57d402c7aefd60e5bc206b1f797d57f", null ],
     [ "alpha", "class_grid__node.html#aed25d28d6e8a5ce725240106efd75c5d", null ],

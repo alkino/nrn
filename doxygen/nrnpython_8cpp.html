@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NEURON: /home/travis/build/neuronsimulator/nrn/src/nrnpython/nrnpython.cpp File Reference</title>
+<title>NEURON: /home/runner/work/nrn/nrn/src/nrnpython/nrnpython.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,6 +100,8 @@ $(document).ready(function(){initNavTree('nrnpython_8cpp.html','');});
 <code>#include &lt;<a class="el" href="nrnoc2iv_8h_source.html">nrnoc2iv.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="nrnpy__reg_8h_source.html">nrnpy_reg.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hoccontext_8h_source.html">hoccontext.h</a>&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;<a class="el" href="ocfile_8h_source.html">ocfile.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hocstr_8h_source.html">hocstr.h</a>&gt;</code><br />
 </div>
 <p><a href="nrnpython_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -117,12 +119,12 @@ Functions</h2></td></tr>
 <tr class="separator:a04c21486ba85ea934a247745994ba83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab960b325fb437077da563d04947d77bb"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrnpython_8cpp.html#ab960b325fb437077da563d04947d77bb">nrnpython_getline</a> (char *)</td></tr>
 <tr class="separator:ab960b325fb437077da563d04947d77bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcdcc468c7d19e19ad556ad4fa59cb64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrnpython_8cpp.html#adcdcc468c7d19e19ad556ad4fa59cb64">rl_stuff_char</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
-<tr class="separator:adcdcc468c7d19e19ad556ad4fa59cb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a503b45fad75396f502be9be5abbbac99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrnpython_8cpp.html#a503b45fad75396f502be9be5abbbac99">nrnpy_augment_path</a> ()</td></tr>
 <tr class="separator:a503b45fad75396f502be9be5abbbac99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a6b392aad2a876a8f5571c440c187bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrnpython_8cpp.html#a7a6b392aad2a876a8f5571c440c187bf">nrnpy_pyrun</a> (const char *)</td></tr>
 <tr class="separator:a7a6b392aad2a876a8f5571c440c187bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcdcc468c7d19e19ad556ad4fa59cb64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrnpython_8cpp.html#adcdcc468c7d19e19ad556ad4fa59cb64">rl_stuff_char</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
+<tr class="separator:adcdcc468c7d19e19ad556ad4fa59cb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -161,7 +163,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hoc_8c_source.html#l01795">1795</a> of file <a class="el" href="hoc_8c_source.html">hoc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoc_8cpp_source.html#l01870">1870</a> of file <a class="el" href="hoc_8cpp_source.html">hoc.cpp</a>.</p>
 
 </div>
 </div>
@@ -180,7 +182,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code2_8c_source.html#l00185">185</a> of file <a class="el" href="code2_8c_source.html">code2.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code2_8cpp_source.html#l00188">188</a> of file <a class="el" href="code2_8cpp_source.html">code2.cpp</a>.</p>
 
 </div>
 </div>
@@ -199,7 +201,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00046">46</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00052">52</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
 
 </div>
 </div>
@@ -219,7 +221,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00063">63</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00085">85</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +249,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00280">280</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00308">308</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
 
 </div>
 </div>
@@ -266,7 +268,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00261">261</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00289">289</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
 
 </div>
 </div>
@@ -288,7 +290,7 @@ Variables</h2></td></tr>
 
 <p>defined(NRNPYTHON_DYNAMICLOAD) </p>
 
-<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00178">178</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00200">200</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
 
 </div>
 </div>
@@ -308,8 +310,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="readline_8c_source.html#l00731">731</a> of file <a class="el" href="readline_8c_source.html">readline.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -325,7 +325,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hoc_8c_source.html#l00159">159</a> of file <a class="el" href="hoc_8c_source.html">hoc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoc_8cpp_source.html#l00162">162</a> of file <a class="el" href="hoc_8cpp_source.html">hoc.cpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +369,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hoc_8c_source.html#l00160">160</a> of file <a class="el" href="hoc_8c_source.html">hoc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoc_8cpp_source.html#l00163">163</a> of file <a class="el" href="hoc_8cpp_source.html">hoc.cpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +385,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00039">39</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00042">42</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00040">40</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnpython_8cpp_source.html#l00043">43</a> of file <a class="el" href="nrnpython_8cpp_source.html">nrnpython.cpp</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocmain_8cpp_source.html#l00203">203</a> of file <a class="el" href="ivocmain_8cpp_source.html">ivocmain.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocmain_8cpp_source.html#l00194">194</a> of file <a class="el" href="ivocmain_8cpp_source.html">ivocmain.cpp</a>.</p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnpy_8cpp_source.html#l00094">94</a> of file <a class="el" href="nrnpy_8cpp_source.html">nrnpy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnpy_8cpp_source.html#l00088">88</a> of file <a class="el" href="nrnpy_8cpp_source.html">nrnpy.cpp</a>.</p>
 
 </div>
 </div>
@@ -449,7 +449,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hoc_8c_source.html#l00037">37</a> of file <a class="el" href="hoc_8c_source.html">hoc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoc_8cpp_source.html#l00039">39</a> of file <a class="el" href="hoc_8cpp_source.html">hoc.cpp</a>.</p>
 
 </div>
 </div>

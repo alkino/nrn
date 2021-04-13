@@ -37,6 +37,8 @@ var shapeplt_8cpp =
     [ "sh_variable", "shapeplt_8cpp.html#aea0b158b40bad226fa4de325986474b9", null ],
     [ "sh_view", "shapeplt_8cpp.html#a9fc25180519caed42c6319d38d4f58e1", null ],
     [ "sh_view_count", "shapeplt_8cpp.html#a31ad56f144acd336f5a42c2f94ba636b", null ],
+    [ "nrnpy_decref", "shapeplt_8cpp.html#a6fd039a61b17893700cabe5447a9c19a", null ],
+    [ "nrnpy_get_pyobj", "shapeplt_8cpp.html#a1d34194a259f25cf6de9cf9d8c9998ca", null ],
     [ "nrnpy_gui_helper_", "shapeplt_8cpp.html#a462c26573dc4a8e19c38a2d21a6dff3d", null ],
     [ "nrnpy_object_to_double_", "shapeplt_8cpp.html#a5a122c219f19dd2ae3a117bad41356f6", null ],
     [ "retobj_members", "shapeplt_8cpp.html#ab706dc2cf0566dcabb0506c3e248fc14", null ],

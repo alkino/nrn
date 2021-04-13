@@ -1,6 +1,9 @@
 var dir_3839636f4dffaa4aab0a620bf9b8685f =
 [
+    [ "nrncore_write", "dir_bc1e699405cc8f7ce82e46d76827724b.html", "dir_bc1e699405cc8f7ce82e46d76827724b" ],
     [ "arraypool.h", "arraypool_8h.html", "arraypool_8h" ],
+    [ "backtrace_utils.cpp", "backtrace__utils_8cpp.html", "backtrace__utils_8cpp" ],
+    [ "backtrace_utils.h", "backtrace__utils_8h.html", "backtrace__utils_8h" ],
     [ "bbs.cpp", "nrniv_2bbs_8cpp.html", null ],
     [ "bbsavestate.cpp", "bbsavestate_8cpp.html", "bbsavestate_8cpp" ],
     [ "bbsavestate.h", "bbsavestate_8h.html", [
@@ -15,7 +18,7 @@ var dir_3839636f4dffaa4aab0a620bf9b8685f =
     [ "bbssrv.cpp", "bbssrv_8cpp.html", null ],
     [ "bgpdma.cpp", "bgpdma_8cpp.html", "bgpdma_8cpp" ],
     [ "bgpdmasetup.cpp", "bgpdmasetup_8cpp.html", "bgpdmasetup_8cpp" ],
-    [ "bgpmeminfo.c", "bgpmeminfo_8c.html", null ],
+    [ "bgpmeminfo.cpp", "bgpmeminfo_8cpp.html", null ],
     [ "cachevec.cpp", "cachevec_8cpp.html", "cachevec_8cpp" ],
     [ "classreg.cpp", "nrniv_2classreg_8cpp.html", "nrniv_2classreg_8cpp" ],
     [ "cvodeobj.cpp", "nrniv_2cvodeobj_8cpp.html", null ],
@@ -44,7 +47,7 @@ var dir_3839636f4dffaa4aab0a620bf9b8685f =
       [ "LinearModelAddition", "class_linear_model_addition.html", "class_linear_model_addition" ]
     ] ],
     [ "linmod1.cpp", "linmod1_8cpp.html", "linmod1_8cpp" ],
-    [ "matrixmap.cpp", "matrixmap_8cpp.html", null ],
+    [ "matrixmap.cpp", "matrixmap_8cpp.html", "matrixmap_8cpp" ],
     [ "matrixmap.h", "matrixmap_8h.html", [
       [ "MatrixMap", "class_matrix_map.html", "class_matrix_map" ]
     ] ],
@@ -64,9 +67,9 @@ var dir_3839636f4dffaa4aab0a620bf9b8685f =
     [ "nonlinz.h", "nonlinz_8h.html", [
       [ "NonLinImp", "class_non_lin_imp.html", "class_non_lin_imp" ]
     ] ],
-    [ "nrnbbcore_write.cpp", "nrnbbcore__write_8cpp.html", "nrnbbcore__write_8cpp" ],
-    [ "nrnbbcore_write.h", "nrnbbcore__write_8h.html", "nrnbbcore__write_8h" ],
     [ "nrnclass.h", "nrnclass_8h.html", "nrnclass_8h" ],
+    [ "nrncore_write.cpp", "nrncore__write_8cpp.html", "nrncore__write_8cpp" ],
+    [ "nrncore_write.h", "nrncore__write_8h.html", "nrncore__write_8h" ],
     [ "nrndae.cpp", "nrndae_8cpp.html", "nrndae_8cpp" ],
     [ "nrndae.h", "nrndae_8h.html", "nrndae_8h" ],
     [ "nrndaspk.cpp", "nrniv_2nrndaspk_8cpp.html", null ],
@@ -81,26 +84,27 @@ var dir_3839636f4dffaa4aab0a620bf9b8685f =
     [ "nrnoc2iv.h", "nrnoc2iv_8h.html", null ],
     [ "nrnpy.cpp", "nrnpy_8cpp.html", "nrnpy_8cpp" ],
     [ "nrnrtime.cpp", "nrnrtime_8cpp.html", null ],
-    [ "nrnsection_mapping.h", "nrnsection__mapping_8h.html", [
-      [ "SecMapping", "struct_sec_mapping.html", "struct_sec_mapping" ],
-      [ "CellMapping", "struct_cell_mapping.html", "struct_cell_mapping" ],
-      [ "NrnMappingInfo", "struct_nrn_mapping_info.html", "struct_nrn_mapping_info" ]
-    ] ],
+    [ "nrnsection_mapping.h", "nrnsection__mapping_8h.html", "nrnsection__mapping_8h" ],
     [ "nrnste.cpp", "nrnste_8cpp.html", "nrnste_8cpp" ],
-    [ "nrnste.h", "nrnste_8h.html", "nrnste_8h" ],
-    [ "nvector_nrnparallel_ld.c", "nvector__nrnparallel__ld_8c.html", "nvector__nrnparallel__ld_8c" ],
+    [ "nrnste.h", "nrnste_8h.html", [
+      [ "STETransition", "class_s_t_e_transition.html", "class_s_t_e_transition" ],
+      [ "STEState", "class_s_t_e_state.html", "class_s_t_e_state" ],
+      [ "StateTransitionEvent", "class_state_transition_event.html", "class_state_transition_event" ]
+    ] ],
+    [ "nvector_nrnparallel_ld.cpp", "nvector__nrnparallel__ld_8cpp.html", "nvector__nrnparallel__ld_8cpp" ],
     [ "nvector_nrnparallel_ld.h", "nvector__nrnparallel__ld_8h.html", "nvector__nrnparallel__ld_8h" ],
-    [ "nvector_nrnserial_ld.c", "nvector__nrnserial__ld_8c.html", "nvector__nrnserial__ld_8c" ],
+    [ "nvector_nrnserial_ld.cpp", "nvector__nrnserial__ld_8cpp.html", "nvector__nrnserial__ld_8cpp" ],
     [ "nvector_nrnserial_ld.h", "nvector__nrnserial__ld_8h.html", "nvector__nrnserial__ld_8h" ],
-    [ "nvector_nrnthread.c", "nvector__nrnthread_8c.html", "nvector__nrnthread_8c" ],
+    [ "nvector_nrnthread.cpp", "nvector__nrnthread_8cpp.html", "nvector__nrnthread_8cpp" ],
     [ "nvector_nrnthread.h", "nvector__nrnthread_8h.html", "nvector__nrnthread_8h" ],
-    [ "nvector_nrnthread_ld.c", "nvector__nrnthread__ld_8c.html", "nvector__nrnthread__ld_8c" ],
+    [ "nvector_nrnthread_ld.cpp", "nvector__nrnthread__ld_8cpp.html", "nvector__nrnthread__ld_8cpp" ],
     [ "nvector_nrnthread_ld.h", "nvector__nrnthread__ld_8h.html", "nvector__nrnthread__ld_8h" ],
     [ "nvkludge.cpp", "nvkludge_8cpp.html", "nvkludge_8cpp" ],
     [ "ocbbs.cpp", "nrniv_2ocbbs_8cpp.html", null ],
     [ "occvode.cpp", "nrniv_2occvode_8cpp.html", null ],
     [ "ocjump.cpp", "nrniv_2ocjump_8cpp.html", null ],
     [ "partrans.cpp", "partrans_8cpp.html", "partrans_8cpp" ],
+    [ "partrans.h", "partrans_8h.html", "partrans_8h" ],
     [ "ppshape.cpp", "ppshape_8cpp.html", "ppshape_8cpp" ],
     [ "ppshape.h", "ppshape_8h.html", [
       [ "PointProcessGlyph", "class_point_process_glyph.html", "class_point_process_glyph" ],

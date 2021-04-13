@@ -111,6 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ada346b00cbaafc605400982573ec31b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b75af4f437f80453d22989e55f04ca8"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_plot_interface.html#a2b75af4f437f80453d22989e55f04ca8">varname</a> () const =0</td></tr>
 <tr class="separator:a2b75af4f437f80453d22989e55f04ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe88d7d8c3cb2e69f3498c07f9df8e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_plot_interface.html#abfe88d7d8c3cb2e69f3498c07f9df8e3">varobj</a> () const =0</td></tr>
+<tr class="separator:abfe88d7d8c3cb2e69f3498c07f9df8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4dd37d179849b0f622470ea3e719f37"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_plot_interface.html#ae4dd37d179849b0f622470ea3e719f37">varobj</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *obj)=0</td></tr>
+<tr class="separator:ae4dd37d179849b0f622470ea3e719f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a277c7f3a792d77ee7b67c8e48bde838b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_plot_interface.html#a277c7f3a792d77ee7b67c8e48bde838b">variable</a> (<a class="el" href="struct_symbol.html">Symbol</a> *)=0</td></tr>
 <tr class="separator:a277c7f3a792d77ee7b67c8e48bde838b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab80d94085baf0395c92ece0860da1893"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_plot_interface.html#ab80d94085baf0395c92ece0860da1893">low</a> ()=0</td></tr>
@@ -119,11 +123,40 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af0330b79e943c3bcccdb6775ad58759d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5153e4edbe9882a5dbb083278b3159eb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_plot_interface.html#a5153e4edbe9882a5dbb083278b3159eb">neuron_section_list</a> ()=0</td></tr>
 <tr class="separator:a5153e4edbe9882a5dbb083278b3159eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644c0cdda184f79827474734636e53b9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_plot_interface.html#a644c0cdda184f79827474734636e53b9">has_iv_view</a> ()=0</td></tr>
+<tr class="separator:a644c0cdda184f79827474734636e53b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="shapeplt_8h_source.html#l00014">14</a> of file <a class="el" href="shapeplt_8h_source.html">shapeplt.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a644c0cdda184f79827474734636e53b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a644c0cdda184f79827474734636e53b9">&#9670;&nbsp;</a></span>has_iv_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ShapePlotInterface::has_iv_view </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_shape_plot_data.html#a5f2c32b1977ce4adc51852a8951a1899">ShapePlotData</a>.</p>
+
+</div>
+</div>
 <a id="af0330b79e943c3bcccdb6775ad58759d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af0330b79e943c3bcccdb6775ad58759d">&#9670;&nbsp;</a></span>high()</h2>
 
@@ -298,8 +331,63 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abfe88d7d8c3cb2e69f3498c07f9df8e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfe88d7d8c3cb2e69f3498c07f9df8e3">&#9670;&nbsp;</a></span>varobj() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>* ShapePlotInterface::varobj </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_shape_plot_data.html#af7742c436fe89bbd03bbc37c7d48db46">ShapePlotData</a>.</p>
+
+</div>
+</div>
+<a id="ae4dd37d179849b0f622470ea3e719f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4dd37d179849b0f622470ea3e719f37">&#9670;&nbsp;</a></span>varobj() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> ShapePlotInterface::varobj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_shape_plot_data.html#ae667efbfb03c0405cbf38d781f39fbfa">ShapePlotData</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/travis/build/neuronsimulator/nrn/src/nrniv/<a class="el" href="shapeplt_8h_source.html">shapeplt.h</a></li>
+<li>/home/runner/work/nrn/nrn/src/nrniv/<a class="el" href="shapeplt_8h_source.html">shapeplt.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

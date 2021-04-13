@@ -102,5 +102,6 @@ var ocfunc_8h =
     [ "ivoc_style", "ocfunc_8h.html#a372c09da6c64b888348e2f92eaec4964", null ],
     [ "nrn_err_dialog", "ocfunc_8h.html#a38b219080ae999e86ce1d1b85b5c23f2", null ],
     [ "nrn_feenableexcept", "ocfunc_8h.html#a818efdd929a69f10669967b8c83f552f", null ],
-    [ "nrniv_bind_thread", "ocfunc_8h.html#aa51143534b7fa4246b11e6e1521bf92c", null ]
+    [ "nrniv_bind_thread", "ocfunc_8h.html#aa51143534b7fa4246b11e6e1521bf92c", null ],
+    [ "nrn_feenableexcept_", "ocfunc_8h.html#a86cb388670c66790ee6bfbd6e0a1a711", null ]
 ];
